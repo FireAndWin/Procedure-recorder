@@ -1,0 +1,16 @@
+INPUT(
+./release\main.o
+./release\mainwindow.o
+./release\display_panel.o
+./release\alt_panel.o
+./release\right_toolbar.o
+./release\down_toolbar.o
+./release\up_display.o
+./release\qrc_images.o
+./release\moc_mainwindow.o
+./release\moc_display_panel.o
+./release\moc_alt_panel.o
+./release\moc_right_toolbar.o
+./release\moc_down_toolbar.o
+./release\moc_up_display.o
+);

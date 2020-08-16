@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Alt_Panel</class>
+ <widget class="QFrame" name="Alt_Panel">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>360</width>
+    <height>240</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Frame</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#Alt_Panel{
+border-image: url(:/panel);
+background-color: rgba(255, 255, 255, 0);
+
+}</string>
+  </property>
+  <property name="frameShape">
+   <enum>QFrame::StyledPanel</enum>
+  </property>
+  <property name="frameShadow">
+   <enum>QFrame::Raised</enum>
+  </property>
+  <widget class="QFrame" name="big_frame">
+   <property name="geometry">
+    <rect>
+     <x>19</x>
+     <y>15</y>
+     <width>331</width>
+     <height>220</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QTreeView" name="treeView">
+      <property name="styleSheet">
+       <string notr="true">QHeaderView::section { 
+height:22px; 
+color:rgb(194, 167, 93);
+	border-image: url(:/images/label_4.png);
+/*border-left:0px solid gray; 
+border-right:1px solid gray; 
+border-top:0px solid gray; 
+border-bottom:0px solid gray;*/
+ }
+
+
+#treeView{
+border-image: url(:/images/label_3.png);
+}
+QTreeView::item{
+height:30px;
+}
+
+QScrollBar:vertical
+{
+background-color: rgb(85, 255, 127);
+}</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>42</height>
+       </size>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="lineWidth">
+       <number>0</number>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>2</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QToolButton" name="btn_alt_add">
+         <property name="minimumSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">#btn_alt_add {
+border-image: url(:/add);
+}
+
+#btn_alt_add:hover {
+border-image: url(:/add_h);
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="shortcut">
+          <string>Del</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="btn_alt_begin">
+         <property name="minimumSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">#btn_alt_begin{
+border-image: url(:/stop);
+}
+#btn_alt_begin:hover{
+border-image: url(:/stop_h);
+}
+#btn_alt_begin:pressed{
+border-image: url(:/begin_h);
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="btn_alt_delete">
+         <property name="minimumSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">#btn_alt_delete {
+border-image: url(:/delete);
+}
+#btn_alt_delete:hover {
+border-image: url(:/delete_h);
+}
+#btn_alt_delete:pressed {
+border-image: url(:/delete_p);
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

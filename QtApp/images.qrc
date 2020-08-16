@@ -1,0 +1,45 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="back">images/back.png</file>
+        <file alias="up">images/fatherTimer_drawer_up.png</file>
+        <file alias="panel">images/panel.png</file>
+        <file alias="down">images/toolBar_drawer_down.png</file>
+        <file alias="right">images/toolBar_drawer_right.png</file>
+        <file alias="begin">images/btn_begin.png</file>
+        <file alias="stop">images/btn_stop.png</file>
+        <file alias="clear">images/btn_clear.png</file>
+        <file alias="clear_p">images/btn_clear_pressed.png</file>
+        <file alias="next">images/btn_next.png</file>
+        <file alias="add">images/btn_add.png</file>
+        <file alias="add_h">images/btn_add_h.png</file>
+        <file alias="delete">images/btn_delete.png</file>
+        <file alias="delete_h">images/btn_delete_h.png</file>
+        <file alias="delete_p">images/btn_delete_p.png</file>
+        <file alias="stop_h">images/btn_stop_h.png</file>
+        <file alias="begin_h">images/btn_begin_p.png</file>
+        <file>images/eye.png</file>
+        <file>images/eye_h.png</file>
+        <file>images/eye_p.png</file>
+        <file>images/location.png</file>
+        <file>images/x.png</file>
+        <file>images/chart.png</file>
+        <file>images/chart_h.png</file>
+        <file>images/out.png</file>
+        <file>images/out_h.png</file>
+        <file>images/read.png</file>
+        <file>images/read_h.png</file>
+        <file>images/listbox_area.png</file>
+        <file>images/listbox_back.png</file>
+        <file>images/listbox_btn_normal.png</file>
+        <file>images/listbox_btn_pressed.png</file>
+        <file>images/listbox_list.png</file>
+        <file>images/fatherTimer_drawer_up_2.png</file>
+        <file>images/listbox_list_2.png</file>
+        <file>images/label.png</file>
+        <file>images/label_2.png</file>
+        <file>images/handle.png</file>
+        <file>images/label_3.png</file>
+        <file>images/label_4.png</file>
+        <file>images/BeamD_.png</file>
+    </qresource>
+</RCC>

@@ -25,10 +25,28 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-        mainwindow.cpp
+        mainwindow.cpp \
+    display_panel.cpp \
+    alt_panel.cpp \
+    right_toolbar.cpp \
+    down_toolbar.cpp \
+    up_display.cpp
 
 HEADERS += \
-        mainwindow.h
+        mainwindow.h \
+    display_panel.h \
+    alt_panel.h \
+    right_toolbar.h \
+    down_toolbar.h \
+    up_display.h
 
 FORMS += \
-        mainwindow.ui
+        mainwindow.ui \
+    display_panel.ui \
+    alt_panel.ui \
+    right_toolbar.ui \
+    down_toolbar.ui \
+    up_display.ui
+
+RESOURCES += \
+    images.qrc

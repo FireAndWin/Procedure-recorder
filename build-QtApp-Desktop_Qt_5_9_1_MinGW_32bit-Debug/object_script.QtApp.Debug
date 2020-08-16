@@ -1,0 +1,16 @@
+INPUT(
+./debug\main.o
+./debug\mainwindow.o
+./debug\display_panel.o
+./debug\alt_panel.o
+./debug\right_toolbar.o
+./debug\down_toolbar.o
+./debug\up_display.o
+./debug\qrc_images.o
+./debug\moc_mainwindow.o
+./debug\moc_display_panel.o
+./debug\moc_alt_panel.o
+./debug\moc_right_toolbar.o
+./debug\moc_down_toolbar.o
+./debug\moc_up_display.o
+);
