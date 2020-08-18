@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Main_Frame</class>
+ <widget class="QFrame" name="Main_Frame">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>454</width>
+    <height>328</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>454</width>
+    <height>328</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>454</width>
+    <height>328</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Frame</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#Main_Frame {
+border-image: url(:/back);
+}</string>
+  </property>
+  <property name="frameShape">
+   <enum>QFrame::StyledPanel</enum>
+  </property>
+  <property name="frameShadow">
+   <enum>QFrame::Raised</enum>
+  </property>
+  <widget class="QToolButton" name="btn_displayTools">
+   <property name="geometry">
+    <rect>
+     <x>417</x>
+     <y>81</y>
+     <width>22</width>
+     <height>167</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QToolButton{
+border-image: url(:/images/btn_displayTools.png);
+}
+
+QToolButton:hover{
+border-image: url(:/images/btn_displayTools_h.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="btn_upperItems">
+   <property name="geometry">
+    <rect>
+     <x>92</x>
+     <y>10</y>
+     <width>268</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QToolButton{
+border-image: url(:/images/btn_upperItem.png);
+}
+
+QToolButton:hover{
+border-image: url(:/images/btn_upperItem_h.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="btn_functionTools">
+   <property name="geometry">
+    <rect>
+     <x>92</x>
+     <y>297</y>
+     <width>267</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QToolButton{
+border-image: url(:/images/btn_functionTools.png);
+}
+
+QToolButton:hover{
+border-image: url(:/images/btn_functionTools_h.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QWidget" name="wgt_centralWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>49</x>
+     <y>45</y>
+     <width>355</width>
+     <height>235</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

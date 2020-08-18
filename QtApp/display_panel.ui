@@ -168,12 +168,12 @@ border-image: url(:/begin);
           <string notr="true">color: rgb(164, 136, 77);</string>
          </property>
          <property name="text">
-          <string>M:</string>
+          <string>D:</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLCDNumber" name="lcdNumber"/>
+        <widget class="QLCDNumber" name="lcd_day"/>
        </item>
       </layout>
      </widget>
@@ -237,12 +237,12 @@ border-image: url(:/begin);
           <string notr="true">color: rgb(189, 161, 97);</string>
          </property>
          <property name="text">
-          <string>D:</string>
+          <string>M:</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLCDNumber" name="lcdNumber_3"/>
+        <widget class="QLCDNumber" name="lcd_minute"/>
        </item>
       </layout>
      </widget>
@@ -311,13 +311,13 @@ border-image: url(:/begin);
         </widget>
        </item>
        <item>
-        <widget class="QLCDNumber" name="lcdNumber_2"/>
+        <widget class="QLCDNumber" name="lcd_hour"/>
        </item>
       </layout>
      </widget>
     </item>
     <item row="0" column="0" colspan="2">
-     <widget class="QLineEdit" name="lineEdit">
+     <widget class="QLineEdit" name="lnd_name">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
         <horstretch>0</horstretch>
@@ -330,7 +330,7 @@ border-image: url(:/begin);
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">#lineEdit {
+       <string notr="true">QLineEdit {
 background-color: rgba(255, 255, 255, 0);
 	color: rgb(182, 151, 89);
 }</string>

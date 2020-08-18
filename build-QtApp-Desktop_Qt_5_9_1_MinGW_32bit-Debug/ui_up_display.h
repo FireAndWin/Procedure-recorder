@@ -29,15 +29,15 @@ public:
     QWidget *widget;
     QVBoxLayout *verticalLayout;
     QLabel *label;
-    QComboBox *comboBox;
-    QComboBox *comboBox_2;
-    QLCDNumber *lcdNumber;
+    QComboBox *cbb_upperItem;
+    QComboBox *cbb_dispalyMethod;
+    QLCDNumber *lcd;
 
     void setupUi(QFrame *Up_Display)
     {
         if (Up_Display->objectName().isEmpty())
             Up_Display->setObjectName(QStringLiteral("Up_Display"));
-        Up_Display->resize(240, 188);
+        Up_Display->resize(260, 188);
         Up_Display->setStyleSheet(QLatin1String("#Up_Display{\n"
 "border-image: url(:/images/fatherTimer_drawer_up_2.png);\n"
 "}"));
@@ -45,7 +45,7 @@ public:
         Up_Display->setFrameShadow(QFrame::Raised);
         widget = new QWidget(Up_Display);
         widget->setObjectName(QStringLiteral("widget"));
-        widget->setGeometry(QRect(30, 28, 180, 150));
+        widget->setGeometry(QRect(30, 28, 191, 150));
         verticalLayout = new QVBoxLayout(widget);
         verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
         verticalLayout->setContentsMargins(6, 0, 10, 0);
@@ -65,17 +65,17 @@ public:
 
         verticalLayout->addWidget(label);
 
-        comboBox = new QComboBox(widget);
-        comboBox->setObjectName(QStringLiteral("comboBox"));
-        comboBox->setMaximumSize(QSize(16777215, 32));
+        cbb_upperItem = new QComboBox(widget);
+        cbb_upperItem->setObjectName(QStringLiteral("cbb_upperItem"));
+        cbb_upperItem->setMaximumSize(QSize(16777215, 32));
         QFont font1;
         font1.setFamily(QStringLiteral("Arial"));
         font1.setPointSize(13);
         font1.setBold(false);
         font1.setItalic(false);
         font1.setWeight(50);
-        comboBox->setFont(font1);
-        comboBox->setStyleSheet(QString::fromUtf8("\n"
+        cbb_upperItem->setFont(font1);
+        cbb_upperItem->setStyleSheet(QString::fromUtf8("\n"
 "/* \346\234\252\344\270\213\346\213\211\346\227\266\357\274\214QComboBox\347\232\204\346\240\267\345\274\217 */\n"
 "QComboBox {\n"
 "border-image: url(:/images/label_2.png);\n"
@@ -116,14 +116,14 @@ public:
 "}\n"
 "\n"
 ""));
-        comboBox->setFrame(false);
+        cbb_upperItem->setFrame(false);
 
-        verticalLayout->addWidget(comboBox);
+        verticalLayout->addWidget(cbb_upperItem);
 
-        comboBox_2 = new QComboBox(widget);
-        comboBox_2->setObjectName(QStringLiteral("comboBox_2"));
-        comboBox_2->setMaximumSize(QSize(50, 16777215));
-        comboBox_2->setStyleSheet(QString::fromUtf8("\n"
+        cbb_dispalyMethod = new QComboBox(widget);
+        cbb_dispalyMethod->setObjectName(QStringLiteral("cbb_dispalyMethod"));
+        cbb_dispalyMethod->setMaximumSize(QSize(50, 16777215));
+        cbb_dispalyMethod->setStyleSheet(QString::fromUtf8("\n"
 "/* \346\234\252\344\270\213\346\213\211\346\227\266\357\274\214QComboBox\347\232\204\346\240\267\345\274\217 */\n"
 "QComboBox {\n"
 "color: rgb(189, 161, 91);\n"
@@ -156,14 +156,15 @@ public:
 "\n"
 "}\n"
 ""));
-        comboBox_2->setFrame(false);
+        cbb_dispalyMethod->setFrame(false);
 
-        verticalLayout->addWidget(comboBox_2);
+        verticalLayout->addWidget(cbb_dispalyMethod);
 
-        lcdNumber = new QLCDNumber(widget);
-        lcdNumber->setObjectName(QStringLiteral("lcdNumber"));
+        lcd = new QLCDNumber(widget);
+        lcd->setObjectName(QStringLiteral("lcd"));
+        lcd->setStyleSheet(QStringLiteral(""));
 
-        verticalLayout->addWidget(lcdNumber);
+        verticalLayout->addWidget(lcd);
 
 
         retranslateUi(Up_Display);
@@ -175,8 +176,8 @@ public:
     {
         Up_Display->setWindowTitle(QApplication::translate("Up_Display", "Frame", Q_NULLPTR));
         label->setText(QApplication::translate("Up_Display", "\347\210\266\351\241\271\347\233\256:", Q_NULLPTR));
-        comboBox->clear();
-        comboBox->insertItems(0, QStringList()
+        cbb_upperItem->clear();
+        cbb_upperItem->insertItems(0, QStringList()
          << QApplication::translate("Up_Display", "     \346\226\260\345\273\272\351\241\271  \347\233\256", Q_NULLPTR)
          << QApplication::translate("Up_Display", "\346\226\260\345\273\272\351\241\271\347\233\256", Q_NULLPTR)
          << QApplication::translate("Up_Display", "\346\226\260\345\273\272\351\241\271\347\233\256", Q_NULLPTR)
@@ -191,8 +192,8 @@ public:
          << QApplication::translate("Up_Display", "\346\226\260\345\273\272\351\241\271\347\233\256", Q_NULLPTR)
          << QApplication::translate("Up_Display", "\346\226\260\345\273\272\351\241\271\347\233\256", Q_NULLPTR)
         );
-        comboBox_2->clear();
-        comboBox_2->insertItems(0, QStringList()
+        cbb_dispalyMethod->clear();
+        cbb_dispalyMethod->insertItems(0, QStringList()
          << QApplication::translate("Up_Display", "D:", Q_NULLPTR)
          << QApplication::translate("Up_Display", "H:", Q_NULLPTR)
          << QApplication::translate("Up_Display", "M:", Q_NULLPTR)

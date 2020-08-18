@@ -30,16 +30,19 @@
         <file>images/read_h.png</file>
         <file>images/listbox_area.png</file>
         <file>images/listbox_back.png</file>
-        <file>images/listbox_btn_normal.png</file>
-        <file>images/listbox_btn_pressed.png</file>
-        <file>images/listbox_list.png</file>
         <file>images/fatherTimer_drawer_up_2.png</file>
-        <file>images/listbox_list_2.png</file>
-        <file>images/label.png</file>
         <file>images/label_2.png</file>
         <file>images/handle.png</file>
         <file>images/label_3.png</file>
         <file>images/label_4.png</file>
         <file>images/BeamD_.png</file>
+        <file>images/btn_displayTools.png</file>
+        <file>images/btn_displayTools_h.png</file>
+        <file>images/btn_functionTools.png</file>
+        <file>images/btn_functionTools_h.png</file>
+        <file>images/btn_upperItem.png</file>
+        <file>images/btn_upperItem_h.png</file>
+        <file>images/location_p.png</file>
+        <file>images/x_p.png</file>
     </qresource>
 </RCC>

@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>240</width>
+    <width>260</width>
     <height>188</height>
    </rect>
   </property>
@@ -29,7 +29,7 @@ border-image: url(:/images/fatherTimer_drawer_up_2.png);
     <rect>
      <x>30</x>
      <y>28</y>
-     <width>180</width>
+     <width>191</width>
      <height>150</height>
     </rect>
    </property>
@@ -70,7 +70,7 @@ border-image: url(:/images/fatherTimer_drawer_up_2.png);
      </widget>
     </item>
     <item>
-     <widget class="QComboBox" name="comboBox">
+     <widget class="QComboBox" name="cbb_upperItem">
       <property name="maximumSize">
        <size>
         <width>16777215</width>
@@ -199,7 +199,7 @@ height:18px;
      </widget>
     </item>
     <item>
-     <widget class="QComboBox" name="comboBox_2">
+     <widget class="QComboBox" name="cbb_dispalyMethod">
       <property name="maximumSize">
        <size>
         <width>50</width>
@@ -262,7 +262,11 @@ height:18px;
      </widget>
     </item>
     <item>
-     <widget class="QLCDNumber" name="lcdNumber"/>
+     <widget class="QLCDNumber" name="lcd">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+     </widget>
     </item>
    </layout>
   </widget>

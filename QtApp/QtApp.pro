@@ -30,7 +30,8 @@ SOURCES += \
     alt_panel.cpp \
     right_toolbar.cpp \
     down_toolbar.cpp \
-    up_display.cpp
+    up_display.cpp \
+    main_frame.cpp
 
 HEADERS += \
         mainwindow.h \
@@ -38,7 +39,8 @@ HEADERS += \
     alt_panel.h \
     right_toolbar.h \
     down_toolbar.h \
-    up_display.h
+    up_display.h \
+    main_frame.h
 
 FORMS += \
         mainwindow.ui \
@@ -46,7 +48,8 @@ FORMS += \
     alt_panel.ui \
     right_toolbar.ui \
     down_toolbar.ui \
-    up_display.ui
+    up_display.ui \
+    main_frame.ui
 
 RESOURCES += \
     images.qrc

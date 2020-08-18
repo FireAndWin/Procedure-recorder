@@ -6,19 +6,25 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>56</width>
+    <width>50</width>
     <height>153</height>
    </rect>
   </property>
   <property name="sizePolicy">
-   <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+   <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
     <horstretch>0</horstretch>
     <verstretch>0</verstretch>
    </sizepolicy>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>30</width>
+    <height>0</height>
+   </size>
+  </property>
   <property name="maximumSize">
    <size>
-    <width>56</width>
+    <width>50</width>
     <height>16777215</height>
    </size>
   </property>
@@ -29,43 +35,67 @@
    <string notr="true">#Right_ToolBar{border-image: url(:/right);}</string>
   </property>
   <property name="frameShape">
-   <enum>QFrame::StyledPanel</enum>
+   <enum>QFrame::NoFrame</enum>
   </property>
   <property name="frameShadow">
-   <enum>QFrame::Raised</enum>
+   <enum>QFrame::Plain</enum>
   </property>
-  <widget class="QFrame" name="verticalFrame">
-   <property name="geometry">
-    <rect>
-     <x>-10</x>
-     <y>10</y>
-     <width>41</width>
-     <height>111</height>
-    </rect>
+  <property name="lineWidth">
+   <number>0</number>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <property name="leftMargin">
+    <number>2</number>
    </property>
-   <property name="maximumSize">
-    <size>
-     <width>41</width>
-     <height>16777215</height>
-    </size>
+   <property name="topMargin">
+    <number>13</number>
    </property>
-   <layout class="QVBoxLayout" name="verticalLayout">
-    <property name="spacing">
-     <number>2</number>
-    </property>
-    <property name="sizeConstraint">
-     <enum>QLayout::SetMinimumSize</enum>
-    </property>
-    <item>
-     <widget class="QToolButton" name="btn_right_hide">
-      <property name="minimumSize">
-       <size>
-        <width>32</width>
-        <height>32</height>
-       </size>
+   <property name="bottomMargin">
+    <number>15</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="verticalWidget" native="true">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>1677215</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="spacing">
+       <number>4</number>
       </property>
-      <property name="styleSheet">
-       <string notr="true">#btn_right_hide{
+      <property name="sizeConstraint">
+       <enum>QLayout::SetMinimumSize</enum>
+      </property>
+      <property name="leftMargin">
+       <number>1</number>
+      </property>
+      <property name="topMargin">
+       <number>8</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>2</number>
+      </property>
+      <item>
+       <widget class="QToolButton" name="btn_right_hide">
+        <property name="minimumSize">
+         <size>
+          <width>32</width>
+          <height>32</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#btn_right_hide{
 border-image: url(:/images/eye.png);
 }
 #btn_right_hide:hover{
@@ -74,46 +104,58 @@ border-image: url(:/images/eye_h.png);
 #btn_right_hide:pressed{
 border-image: url(:/images/eye_p.png);
 }</string>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QToolButton" name="btn_right_relocate">
-      <property name="minimumSize">
-       <size>
-        <width>32</width>
-        <height>32</height>
-       </size>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">border-image: url(:/images/location.png);</string>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QToolButton" name="btn_right_close">
-      <property name="minimumSize">
-       <size>
-        <width>32</width>
-        <height>32</height>
-       </size>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">border-image: url(:/images/x.png);</string>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-    </item>
-   </layout>
-  </widget>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="btn_right_relocate">
+        <property name="minimumSize">
+         <size>
+          <width>32</width>
+          <height>32</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QToolButton{
+border-image: url(:/images/location.png);
+}
+QToolButton:hover{
+border-image: url(:/images/location_p.png);
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="btn_right_close">
+        <property name="minimumSize">
+         <size>
+          <width>32</width>
+          <height>32</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QToolButton{
+border-image: url(:/images/x.png);
+}
+QToolButton:hover{
+border-image: url(:/images/x_p.png);
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
  </widget>
  <resources/>
  <connections/>

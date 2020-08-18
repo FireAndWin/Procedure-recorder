@@ -6,6 +6,7 @@ INPUT(
 ./release\right_toolbar.o
 ./release\down_toolbar.o
 ./release\up_display.o
+./release\main_frame.o
 ./release\qrc_images.o
 ./release\moc_mainwindow.o
 ./release\moc_display_panel.o
@@ -13,4 +14,5 @@ INPUT(
 ./release\moc_right_toolbar.o
 ./release\moc_down_toolbar.o
 ./release\moc_up_display.o
+./release\moc_main_frame.o
 );

@@ -11,14 +11,14 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
 //    ui->setupUi(this);
-//    Display_Panel * panel=new Display_Panel(this);
-//    panel->show();
+    Display_Panel * panel=new Display_Panel(this);
+    panel->show();
 
 //    Alt_Panel * panel_2=new Alt_Panel(this);
 //    panel_2->show();
 
-    Down_ToolBar *bar=new Down_ToolBar();
-    bar->show();
+//    Down_ToolBar *bar=new Down_ToolBar();
+//    bar->show();
 
 //    Right_ToolBar *bar_2=new Right_ToolBar(this);
 //    bar_2->show();

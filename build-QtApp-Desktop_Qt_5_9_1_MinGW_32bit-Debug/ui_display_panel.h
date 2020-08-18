@@ -35,16 +35,16 @@ public:
     QFrame *frame_3;
     QHBoxLayout *horizontalLayout_3;
     QLabel *label_5;
-    QLCDNumber *lcdNumber;
+    QLCDNumber *lcd_day;
     QFrame *frame;
     QHBoxLayout *horizontalLayout;
     QLabel *label;
-    QLCDNumber *lcdNumber_3;
+    QLCDNumber *lcd_minute;
     QFrame *frame_2;
     QHBoxLayout *horizontalLayout_2;
     QLabel *label_3;
-    QLCDNumber *lcdNumber_2;
-    QLineEdit *lineEdit;
+    QLCDNumber *lcd_hour;
+    QLineEdit *lnd_name;
 
     void setupUi(QFrame *Display_Panel)
     {
@@ -133,10 +133,10 @@ public:
 
         horizontalLayout_3->addWidget(label_5);
 
-        lcdNumber = new QLCDNumber(frame_3);
-        lcdNumber->setObjectName(QStringLiteral("lcdNumber"));
+        lcd_day = new QLCDNumber(frame_3);
+        lcd_day->setObjectName(QStringLiteral("lcd_day"));
 
-        horizontalLayout_3->addWidget(lcdNumber);
+        horizontalLayout_3->addWidget(lcd_day);
 
 
         gridLayout->addWidget(frame_3, 3, 0, 1, 1);
@@ -165,10 +165,10 @@ public:
 
         horizontalLayout->addWidget(label);
 
-        lcdNumber_3 = new QLCDNumber(frame);
-        lcdNumber_3->setObjectName(QStringLiteral("lcdNumber_3"));
+        lcd_minute = new QLCDNumber(frame);
+        lcd_minute->setObjectName(QStringLiteral("lcd_minute"));
 
-        horizontalLayout->addWidget(lcdNumber_3);
+        horizontalLayout->addWidget(lcd_minute);
 
 
         gridLayout->addWidget(frame, 1, 0, 1, 1);
@@ -194,29 +194,29 @@ public:
 
         horizontalLayout_2->addWidget(label_3);
 
-        lcdNumber_2 = new QLCDNumber(frame_2);
-        lcdNumber_2->setObjectName(QStringLiteral("lcdNumber_2"));
+        lcd_hour = new QLCDNumber(frame_2);
+        lcd_hour->setObjectName(QStringLiteral("lcd_hour"));
 
-        horizontalLayout_2->addWidget(lcdNumber_2);
+        horizontalLayout_2->addWidget(lcd_hour);
 
 
         gridLayout->addWidget(frame_2, 2, 0, 1, 1);
 
-        lineEdit = new QLineEdit(gridFrame);
-        lineEdit->setObjectName(QStringLiteral("lineEdit"));
+        lnd_name = new QLineEdit(gridFrame);
+        lnd_name->setObjectName(QStringLiteral("lnd_name"));
         QSizePolicy sizePolicy4(QSizePolicy::Expanding, QSizePolicy::Fixed);
         sizePolicy4.setHorizontalStretch(0);
         sizePolicy4.setVerticalStretch(0);
-        sizePolicy4.setHeightForWidth(lineEdit->sizePolicy().hasHeightForWidth());
-        lineEdit->setSizePolicy(sizePolicy4);
-        lineEdit->setFont(font);
-        lineEdit->setStyleSheet(QLatin1String("#lineEdit {\n"
+        sizePolicy4.setHeightForWidth(lnd_name->sizePolicy().hasHeightForWidth());
+        lnd_name->setSizePolicy(sizePolicy4);
+        lnd_name->setFont(font);
+        lnd_name->setStyleSheet(QLatin1String("QLineEdit {\n"
 "background-color: rgba(255, 255, 255, 0);\n"
 "	color: rgb(182, 151, 89);\n"
 "}"));
-        lineEdit->setFrame(false);
+        lnd_name->setFrame(false);
 
-        gridLayout->addWidget(lineEdit, 0, 0, 1, 2);
+        gridLayout->addWidget(lnd_name, 0, 0, 1, 2);
 
 
         retranslateUi(Display_Panel);
@@ -230,10 +230,10 @@ public:
         btn_next->setText(QString());
         btn_clear->setText(QString());
         btn_stopBegin->setText(QString());
-        label_5->setText(QApplication::translate("Display_Panel", "M:", Q_NULLPTR));
-        label->setText(QApplication::translate("Display_Panel", "D:", Q_NULLPTR));
+        label_5->setText(QApplication::translate("Display_Panel", "D:", Q_NULLPTR));
+        label->setText(QApplication::translate("Display_Panel", "M:", Q_NULLPTR));
         label_3->setText(QApplication::translate("Display_Panel", "H:", Q_NULLPTR));
-        lineEdit->setText(QString());
+        lnd_name->setText(QString());
     } // retranslateUi
 
 };

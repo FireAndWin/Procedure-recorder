@@ -6,6 +6,7 @@ INPUT(
 ./debug\right_toolbar.o
 ./debug\down_toolbar.o
 ./debug\up_display.o
+./debug\main_frame.o
 ./debug\qrc_images.o
 ./debug\moc_mainwindow.o
 ./debug\moc_display_panel.o
@@ -13,4 +14,5 @@ INPUT(
 ./debug\moc_right_toolbar.o
 ./debug\moc_down_toolbar.o
 ./debug\moc_up_display.o
+./debug\moc_main_frame.o
 );

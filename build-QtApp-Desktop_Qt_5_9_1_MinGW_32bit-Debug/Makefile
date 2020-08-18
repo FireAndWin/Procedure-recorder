@@ -210,6 +210,7 @@ Makefile: ../QtApp/QtApp.pro ../../../../C-related/Qt/5.9.1/mingw53_32/mkspecs/w
 		../../../../C-related/Qt/5.9.1/mingw53_32/mkspecs/features/qt_config.prf \
 		../../../../C-related/Qt/5.9.1/mingw53_32/mkspecs/win32-g++/qmake.conf \
 		../../../../C-related/Qt/5.9.1/mingw53_32/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		../../../../C-related/Qt/5.9.1/mingw53_32/mkspecs/features/exclusive_builds.prf \
 		../../../../C-related/Qt/5.9.1/mingw53_32/mkspecs/features/toolchain.prf \
 		../../../../C-related/Qt/5.9.1/mingw53_32/mkspecs/features/default_pre.prf \
@@ -387,6 +388,7 @@ Makefile: ../QtApp/QtApp.pro ../../../../C-related/Qt/5.9.1/mingw53_32/mkspecs/w
 ../../../../C-related/Qt/5.9.1/mingw53_32/mkspecs/features/qt_config.prf:
 ../../../../C-related/Qt/5.9.1/mingw53_32/mkspecs/win32-g++/qmake.conf:
 ../../../../C-related/Qt/5.9.1/mingw53_32/mkspecs/features/spec_post.prf:
+.qmake.stash:
 ../../../../C-related/Qt/5.9.1/mingw53_32/mkspecs/features/exclusive_builds.prf:
 ../../../../C-related/Qt/5.9.1/mingw53_32/mkspecs/features/toolchain.prf:
 ../../../../C-related/Qt/5.9.1/mingw53_32/mkspecs/features/default_pre.prf:
