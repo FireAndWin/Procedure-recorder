@@ -25,6 +25,7 @@ QT_BEGIN_NAMESPACE
 class Ui_Alt_Panel
 {
 public:
+    QHBoxLayout *horizontalLayout_2;
     QFrame *big_frame;
     QVBoxLayout *verticalLayout;
     QTreeView *treeView;
@@ -46,17 +47,23 @@ public:
 "}"));
         Alt_Panel->setFrameShape(QFrame::StyledPanel);
         Alt_Panel->setFrameShadow(QFrame::Raised);
+        horizontalLayout_2 = new QHBoxLayout(Alt_Panel);
+        horizontalLayout_2->setSpacing(0);
+        horizontalLayout_2->setObjectName(QStringLiteral("horizontalLayout_2"));
+        horizontalLayout_2->setContentsMargins(0, 0, 0, 0);
         big_frame = new QFrame(Alt_Panel);
         big_frame->setObjectName(QStringLiteral("big_frame"));
-        big_frame->setGeometry(QRect(19, 15, 331, 220));
+        big_frame->setStyleSheet(QLatin1String("#big_frame{\n"
+"border-image: url(:/panel);\n"
+"}"));
         verticalLayout = new QVBoxLayout(big_frame);
         verticalLayout->setSpacing(0);
         verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
-        verticalLayout->setContentsMargins(0, -1, -1, -1);
+        verticalLayout->setContentsMargins(20, 22, 17, 14);
         treeView = new QTreeView(big_frame);
         treeView->setObjectName(QStringLiteral("treeView"));
         treeView->setStyleSheet(QLatin1String("QHeaderView::section { \n"
-"height:22px; \n"
+"height:23px; \n"
 "color:rgb(194, 167, 93);\n"
 "	border-image: url(:/images/label_4.png);\n"
 "/*border-left:0px solid gray; \n"
@@ -137,6 +144,9 @@ public:
         verticalLayout->addWidget(frame);
 
 
+        horizontalLayout_2->addWidget(big_frame);
+
+
         retranslateUi(Alt_Panel);
 
         QMetaObject::connectSlotsByName(Alt_Panel);
@@ -147,10 +157,16 @@ public:
         Alt_Panel->setWindowTitle(QApplication::translate("Alt_Panel", "Frame", Q_NULLPTR));
         btn_alt_add->setText(QString());
 #ifndef QT_NO_SHORTCUT
-        btn_alt_add->setShortcut(QApplication::translate("Alt_Panel", "Del", Q_NULLPTR));
+        btn_alt_add->setShortcut(QApplication::translate("Alt_Panel", "Ctrl+A", Q_NULLPTR));
 #endif // QT_NO_SHORTCUT
         btn_alt_begin->setText(QString());
+#ifndef QT_NO_SHORTCUT
+        btn_alt_begin->setShortcut(QApplication::translate("Alt_Panel", "Ctrl+Space", Q_NULLPTR));
+#endif // QT_NO_SHORTCUT
         btn_alt_delete->setText(QString());
+#ifndef QT_NO_SHORTCUT
+        btn_alt_delete->setShortcut(QApplication::translate("Alt_Panel", "Ctrl+Del", Q_NULLPTR));
+#endif // QT_NO_SHORTCUT
     } // retranslateUi
 
 };

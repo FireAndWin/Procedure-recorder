@@ -14,7 +14,6 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QFrame>
-#include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QToolButton>
 #include <QtWidgets/QVBoxLayout>
@@ -25,7 +24,7 @@ QT_BEGIN_NAMESPACE
 class Ui_Right_ToolBar
 {
 public:
-    QHBoxLayout *horizontalLayout;
+    QVBoxLayout *verticalLayout_2;
     QWidget *verticalWidget;
     QVBoxLayout *verticalLayout;
     QToolButton *btn_right_hide;
@@ -48,9 +47,10 @@ public:
         Right_ToolBar->setFrameShape(QFrame::NoFrame);
         Right_ToolBar->setFrameShadow(QFrame::Plain);
         Right_ToolBar->setLineWidth(0);
-        horizontalLayout = new QHBoxLayout(Right_ToolBar);
-        horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
-        horizontalLayout->setContentsMargins(2, 13, -1, 15);
+        verticalLayout_2 = new QVBoxLayout(Right_ToolBar);
+        verticalLayout_2->setSpacing(0);
+        verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
+        verticalLayout_2->setContentsMargins(0, 0, 0, 0);
         verticalWidget = new QWidget(Right_ToolBar);
         verticalWidget->setObjectName(QStringLiteral("verticalWidget"));
         QSizePolicy sizePolicy1(QSizePolicy::Minimum, QSizePolicy::Preferred);
@@ -59,11 +59,14 @@ public:
         sizePolicy1.setHeightForWidth(verticalWidget->sizePolicy().hasHeightForWidth());
         verticalWidget->setSizePolicy(sizePolicy1);
         verticalWidget->setMaximumSize(QSize(1677215, 16777215));
+        verticalWidget->setStyleSheet(QLatin1String("#verticalWidget{\n"
+"border-image: url(:/right);\n"
+"}"));
         verticalLayout = new QVBoxLayout(verticalWidget);
-        verticalLayout->setSpacing(4);
+        verticalLayout->setSpacing(0);
         verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
         verticalLayout->setSizeConstraint(QLayout::SetMinimumSize);
-        verticalLayout->setContentsMargins(1, 8, 0, 2);
+        verticalLayout->setContentsMargins(1, 16, 0, 15);
         btn_right_hide = new QToolButton(verticalWidget);
         btn_right_hide->setObjectName(QStringLiteral("btn_right_hide"));
         btn_right_hide->setMinimumSize(QSize(32, 32));
@@ -104,7 +107,7 @@ public:
         verticalLayout->addWidget(btn_right_close);
 
 
-        horizontalLayout->addWidget(verticalWidget);
+        verticalLayout_2->addWidget(verticalWidget);
 
 
         retranslateUi(Right_ToolBar);
@@ -117,7 +120,13 @@ public:
         Right_ToolBar->setWindowTitle(QApplication::translate("Right_ToolBar", "Frame", Q_NULLPTR));
         btn_right_hide->setText(QString());
         btn_right_relocate->setText(QString());
+#ifndef QT_NO_SHORTCUT
+        btn_right_relocate->setShortcut(QApplication::translate("Right_ToolBar", "Ctrl+L", Q_NULLPTR));
+#endif // QT_NO_SHORTCUT
         btn_right_close->setText(QString());
+#ifndef QT_NO_SHORTCUT
+        btn_right_close->setShortcut(QApplication::translate("Right_ToolBar", "Esc", Q_NULLPTR));
+#endif // QT_NO_SHORTCUT
     } // retranslateUi
 
 };

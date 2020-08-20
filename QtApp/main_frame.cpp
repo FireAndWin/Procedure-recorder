@@ -12,8 +12,8 @@ Main_Frame::Main_Frame(QWidget *parent) :
 {
     ui->setupUi(this);
     //    ui->setupUi(this);
-//        Display_Panel * panel=new Display_Panel();
-//        panel->show();
+        Display_Panel * panel=new Display_Panel();
+        panel->show();
 
 //        Alt_Panel * panel_2=new Alt_Panel(this);
 //        panel_2->show();
@@ -21,14 +21,19 @@ Main_Frame::Main_Frame(QWidget *parent) :
 //        Down_ToolBar *bar=new Down_ToolBar();
 //        bar->show();
 
-        Right_ToolBar *bar_2=new Right_ToolBar();
-        bar_2->show();
+//        Right_ToolBar *bar_2=new Right_ToolBar();
+//        bar_2->show();
 
-//        Up_Display *bar_3=new Up_Display();
-//        bar_3->show();
+        Up_Display *bar_3=new Up_Display();
+        bar_3->show();
 }
 
 Main_Frame::~Main_Frame()
 {
     delete ui;
+}
+
+void Main_Frame::on_btn_displayTools_clicked()
+{
+
 }

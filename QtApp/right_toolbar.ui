@@ -43,15 +43,21 @@
   <property name="lineWidth">
    <number>0</number>
   </property>
-  <layout class="QHBoxLayout" name="horizontalLayout">
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <property name="spacing">
+    <number>0</number>
+   </property>
    <property name="leftMargin">
-    <number>2</number>
+    <number>0</number>
    </property>
    <property name="topMargin">
-    <number>13</number>
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
    </property>
    <property name="bottomMargin">
-    <number>15</number>
+    <number>0</number>
    </property>
    <item>
     <widget class="QWidget" name="verticalWidget" native="true">
@@ -67,9 +73,14 @@
        <height>16777215</height>
       </size>
      </property>
+     <property name="styleSheet">
+      <string notr="true">#verticalWidget{
+border-image: url(:/right);
+}</string>
+     </property>
      <layout class="QVBoxLayout" name="verticalLayout">
       <property name="spacing">
-       <number>4</number>
+       <number>0</number>
       </property>
       <property name="sizeConstraint">
        <enum>QLayout::SetMinimumSize</enum>
@@ -78,13 +89,13 @@
        <number>1</number>
       </property>
       <property name="topMargin">
-       <number>8</number>
+       <number>16</number>
       </property>
       <property name="rightMargin">
        <number>0</number>
       </property>
       <property name="bottomMargin">
-       <number>2</number>
+       <number>15</number>
       </property>
       <item>
        <widget class="QToolButton" name="btn_right_hide">
@@ -129,6 +140,9 @@ border-image: url(:/images/location_p.png);
         <property name="text">
          <string/>
         </property>
+        <property name="shortcut">
+         <string>Ctrl+L</string>
+        </property>
        </widget>
       </item>
       <item>
@@ -149,6 +163,9 @@ border-image: url(:/images/x_p.png);
         </property>
         <property name="text">
          <string/>
+        </property>
+        <property name="shortcut">
+         <string>Esc</string>
         </property>
        </widget>
       </item>

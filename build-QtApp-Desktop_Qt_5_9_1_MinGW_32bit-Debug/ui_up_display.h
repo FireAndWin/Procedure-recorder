@@ -15,6 +15,7 @@
 #include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QComboBox>
 #include <QtWidgets/QFrame>
+#include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLCDNumber>
 #include <QtWidgets/QLabel>
@@ -26,6 +27,7 @@ QT_BEGIN_NAMESPACE
 class Ui_Up_Display
 {
 public:
+    QHBoxLayout *horizontalLayout;
     QWidget *widget;
     QVBoxLayout *verticalLayout;
     QLabel *label;
@@ -43,12 +45,18 @@ public:
 "}"));
         Up_Display->setFrameShape(QFrame::StyledPanel);
         Up_Display->setFrameShadow(QFrame::Raised);
+        horizontalLayout = new QHBoxLayout(Up_Display);
+        horizontalLayout->setSpacing(0);
+        horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
+        horizontalLayout->setContentsMargins(0, 0, 0, 0);
         widget = new QWidget(Up_Display);
         widget->setObjectName(QStringLiteral("widget"));
-        widget->setGeometry(QRect(30, 28, 191, 150));
+        widget->setStyleSheet(QLatin1String("#widget{\n"
+"border-image: url(:/images/fatherTimer_drawer_up_2.png);\n"
+"}"));
         verticalLayout = new QVBoxLayout(widget);
         verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
-        verticalLayout->setContentsMargins(6, 0, 10, 0);
+        verticalLayout->setContentsMargins(42, 25, 45, 0);
         label = new QLabel(widget);
         label->setObjectName(QStringLiteral("label"));
         QSizePolicy sizePolicy(QSizePolicy::Preferred, QSizePolicy::Maximum);
@@ -162,9 +170,13 @@ public:
 
         lcd = new QLCDNumber(widget);
         lcd->setObjectName(QStringLiteral("lcd"));
-        lcd->setStyleSheet(QStringLiteral(""));
+        lcd->setStyleSheet(QStringLiteral("border-image: url(:/images/label_2.png);"));
+        lcd->setProperty("intValue", QVariant(100));
 
         verticalLayout->addWidget(lcd);
+
+
+        horizontalLayout->addWidget(widget);
 
 
         retranslateUi(Up_Display);

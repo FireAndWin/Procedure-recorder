@@ -1,0 +1,2 @@
+QtCore.QMetaObject.connectSlotByName(类名)
+放在setupUi()的最后

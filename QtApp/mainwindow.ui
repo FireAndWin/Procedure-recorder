@@ -6,14 +6,168 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>979</width>
+    <height>727</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QToolButton" name="btn_displayTools">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>200</y>
+      <width>22</width>
+      <height>167</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QToolButton{
+border-image: url(:/images/btn_displayTools.png);
+}
+
+QToolButton:hover{
+border-image: url(:/images/btn_displayTools_h.png);
+}
+QToolButton:pressed{
+border-image: url(:/images/btn_displayTools_h.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="shortcut">
+     <string>Ctrl+D</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="wgt_centralWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>361</width>
+      <height>235</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="btn_functionTools">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>410</y>
+      <width>267</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QToolButton{
+border-image: url(:/images/btn_functionTools.png);
+}
+
+QToolButton:hover{
+border-image: url(:/images/btn_functionTools_h.png);
+}
+
+QToolButton:pressed{
+border-image: url(:/images/btn_functionTools_h.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="shortcut">
+     <string>Ctrl+F</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="btn_upperItems">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>480</y>
+      <width>268</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QToolButton{
+border-image: url(:/images/btn_upperItem.png);
+}
+
+QToolButton:hover{
+border-image: url(:/images/btn_upperItem_h.png);
+}
+
+QToolButton:pressed{
+border-image: url(:/images/btn_upperItem_h.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="shortcut">
+     <string>Ctrl+U</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="btn_displayTools_2">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>200</y>
+      <width>22</width>
+      <height>167</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QToolButton{
+border-image: url(:/images/btn_displayTools.png);
+}
+
+QToolButton:hover{
+border-image: url(:/images/btn_displayTools_h.png);
+}
+QToolButton:pressed{
+border-image: url(:/images/btn_displayTools_h.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="shortcut">
+     <string>Ctrl+D</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="btn_functionTools_2">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>270</y>
+      <width>267</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QToolButton{
+border-image: url(:/images/btn_functionTools.png);
+}
+
+QToolButton:hover{
+border-image: url(:/images/btn_functionTools_h.png);
+}
+
+QToolButton:pressed{
+border-image: url(:/images/btn_functionTools_h.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="shortcut">
+     <string>Ctrl+F</string>
+    </property>
+   </widget>
+  </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>

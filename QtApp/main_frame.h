@@ -15,6 +15,9 @@ public:
     explicit Main_Frame(QWidget *parent = 0);
     ~Main_Frame();
 
+private slots:
+    void on_btn_displayTools_clicked();
+
 private:
     Ui::Main_Frame *ui;
 };

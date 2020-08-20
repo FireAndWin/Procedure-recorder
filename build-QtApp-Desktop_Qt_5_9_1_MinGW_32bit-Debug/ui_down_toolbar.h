@@ -17,6 +17,7 @@
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QToolButton>
+#include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -24,6 +25,7 @@ QT_BEGIN_NAMESPACE
 class Ui_Down_ToolBar
 {
 public:
+    QVBoxLayout *verticalLayout;
     QWidget *widget;
     QHBoxLayout *horizontalLayout;
     QToolButton *btn_down_read;
@@ -39,12 +41,19 @@ public:
 "{border-image: url(:/down);}"));
         Down_ToolBar->setFrameShape(QFrame::StyledPanel);
         Down_ToolBar->setFrameShadow(QFrame::Raised);
+        verticalLayout = new QVBoxLayout(Down_ToolBar);
+        verticalLayout->setSpacing(0);
+        verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
+        verticalLayout->setContentsMargins(0, 0, 0, 0);
         widget = new QWidget(Down_ToolBar);
         widget->setObjectName(QStringLiteral("widget"));
-        widget->setGeometry(QRect(30, -1, 191, 41));
+        widget->setStyleSheet(QLatin1String("#widget{\n"
+"border-image: url(:/down);\n"
+"}"));
         horizontalLayout = new QHBoxLayout(widget);
+        horizontalLayout->setSpacing(3);
         horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
-        horizontalLayout->setContentsMargins(0, 0, 0, 0);
+        horizontalLayout->setContentsMargins(8, 0, 8, 14);
         btn_down_read = new QToolButton(widget);
         btn_down_read->setObjectName(QStringLiteral("btn_down_read"));
         btn_down_read->setMinimumSize(QSize(32, 32));
@@ -82,6 +91,9 @@ public:
 "}"));
 
         horizontalLayout->addWidget(btn_down_chart);
+
+
+        verticalLayout->addWidget(widget);
 
 
         retranslateUi(Down_ToolBar);
